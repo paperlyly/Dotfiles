@@ -72,7 +72,11 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+x kill
-bindsym $mod+Shift+x exec xkill
+bindsym --release $mod+F4 exec xkill 
+
+
+# take a screenshot 
+bindsym $mod+F11 exec flameshot gui
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show drun -show-icons
